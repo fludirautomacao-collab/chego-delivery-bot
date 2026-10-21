@@ -1,3 +1,4 @@
+
 {
   "name": "chego-delivery-server",
   "version": "1.0.0",
@@ -9,11 +10,16 @@
     "start": "node index.js",
     "check": "node --check index.js"
   },
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.18",
     "dotenv": "^16.4.7",
     "pino": "^9.6.0",
     "qrcode-terminal": "^0.12.0"
+  },
+  "overrides": {
+    "libsignal": "npm:libsignal@^6.0.0"
   }
 }
